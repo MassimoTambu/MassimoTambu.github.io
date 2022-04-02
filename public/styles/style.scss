@@ -1,0 +1,104 @@
+@import "./variables.scss";
+@import "./responsive.scss";
+
+html {
+  text-size-adjust: 100%;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+
+  font-family: $font_body;
+  font-size: $font_size;
+  font-weight: $font_light;
+  color: $colors_text;
+  background-color: $colors_card_bg;
+  overflow-y: scroll;
+
+  * {
+    outline: none;
+  }
+
+  .img-responsive {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+    margin-bottom: $size_base_multiplier * 2;
+    font-family: $font_headline;
+  }
+
+  h1,
+  .h1 {
+    font-size: $font_size_h1;
+  }
+
+  h2,
+  .h2 {
+    font-size: $font_size_h2;
+  }
+
+  h3,
+  .h3 {
+    font-size: $font_size_h3;
+  }
+
+  h4,
+  .h4 {
+    font-size: $font_size_h4;
+  }
+
+  h5,
+  .h5 {
+    font-size: $font_size_h5;
+    line-height: #{$line_height_h5};
+  }
+
+  h6,
+  .h6 {
+    font-size: $font_size_text;
+  }
+
+  p {
+    margin: 0px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  >section.container {
+    position: relative;
+    margin: 0px auto;
+    max-width: 1440px;
+
+    @include respond-to(from-md) {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+  }
+}

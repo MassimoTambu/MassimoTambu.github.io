@@ -1,0 +1,91 @@
+html {
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 300;
+  color: #141414;
+  background-color: #F6F6F6;
+  overflow-y: scroll;
+}
+body * {
+  outline: none;
+}
+body .img-responsive {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+body .h1,
+body .h2,
+body .h3,
+body .h4,
+body .h5,
+body .h6,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+body h1,
+body .h1 {
+  font-size: 26px;
+}
+body h2,
+body .h2 {
+  font-size: 24px;
+}
+body h3,
+body .h3 {
+  font-size: 22px;
+}
+body h4,
+body .h4 {
+  font-size: 20px;
+}
+body h5,
+body .h5 {
+  font-size: 18px;
+  line-height: 24px;
+}
+body h6,
+body .h6 {
+  font-size: 16px;
+}
+body p {
+  margin: 0px;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+body > section.container {
+  position: relative;
+  margin: 0px auto;
+  max-width: 1440px;
+}
+@media screen and (min-width: 992px) {
+  body > section.container {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}/*# sourceMappingURL=style.css.map */

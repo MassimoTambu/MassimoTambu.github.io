@@ -1,0 +1,231 @@
+@import "./variables.scss";
+@import "./responsive.scss";
+
+.projects-container {
+  padding-top: 0px;
+  flex: 1 1 0%;
+  width: calc(100% - $size_base_multiplier * 8);
+  margin: $size_base_multiplier * 3;
+  min-width: unset;
+
+  @include respond-to(from-md) {
+    min-width: $size_base_multiplier * 55;
+    min-height: $size_base_multiplier * 88;
+    margin: $size_base_multiplier * 7 $size_base_multiplier * 14 $size_base_multiplier * 7 $size_base_multiplier * 9;
+    padding-top: 0px;
+  }
+
+  @include respond-to(from-lg) {
+    min-width: $size_base_multiplier * 80;
+  }
+
+  >.qualification-title {
+    width: 100%;
+
+    >h2 {
+      font-size: 1.1875rem;
+      line-height: 1.75;
+      text-align: center;
+
+      @include respond-to(from-md) {
+        font-size: 2.125rem;
+        font-weight: bold;
+        text-align: left;
+      }
+
+      @include respond-to(from-lg) {
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 1.25;
+      }
+    }
+  }
+
+  >.projects-subtitle {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid transparent;
+    margin-top: 16px;
+    border-bottom: unset;
+
+    @include respond-to(from-md) {
+      display: flex;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: $size_base_multiplier * 4;
+    }
+
+    >h4 {
+      font-size: 1rem;
+      line-height: 1.5;
+      font-weight: $font_semi_bold;
+      white-space: nowrap;
+
+      @include respond-to(from-xs) {
+        font-size: 1.1875rem;
+        line-height: 1.47;
+      }
+    }
+  }
+
+  >div {
+    flex: 1 1 0%;
+    margin-top: 24px;
+    display: block;
+
+    >.projects {
+      position: relative;
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      justify-content: center;
+      gap: $size_base_multiplier * 2;
+
+      @include respond-to(from-sm) {
+        display: grid;
+        grid-template-columns: $size_base_multiplier * 44 $size_base_multiplier * 44;
+      }
+
+      @include respond-to(from-md) {
+        row-gap: $size_base_multiplier * 4;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
+      }
+
+      >div {
+        opacity: 1;
+        visibility: visible;
+        transform-origin: 50% 50% 0px;
+        z-index: auto;
+        transform: none !important;
+
+        >.project {
+          height: auto;
+          width: 100%;
+          max-width: $size_base_multiplier * 44;
+          padding: $size_base_multiplier * 2;
+          margin: 0px auto;
+          position: relative;
+          border: none;
+          background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPiA8ZGVmcz4gPG1hc2sgaWQ9Im1hc2siPiA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiByeD0iMjAiIHJ5PSIyMCIgZmlsbD0id2hpdGUiIC8+IDwvbWFzaz4gPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudEJvcmRlciIgZ3JhZGllbnRUcmFuc2Zvcm09InJvdGF0ZSg5MCkiPiA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmZmZmYiIC8+IDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0icmdiYSgyNTUsIDI1NSwgMjU1LCAwKSIgLz4gPC9saW5lYXJHcmFkaWVudD4gPC9kZWZzPiA8cmVjdCBtYXNrPSJ1cmwoI21hc2spIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJub25lIiByeD0iMjAiIHJ5PSIyMCIgc3Ryb2tlPSJ1cmwoI2dyYWRpZW50Qm9yZGVyKSIgc3Ryb2tlLXdpZHRoPSIzIiAvPiA8L3N2Zz4=);
+          border-radius: 20px;
+
+          background: $colors_project_card_bg;
+          box-shadow: none;
+
+          @include respond-to(from-sm) {
+            height: 100%;
+          }
+
+          @include respond-to(from-md) {
+            height: auto;
+          }
+
+          @include respond-to(from-lg) {
+            padding: $size_base_multiplier * 4;
+            margin: unset;
+            max-width: unset;
+          }
+
+          >.project-body {
+            display: flex;
+            flex-direction: column;
+            height: inherit;
+
+            @include respond-to(from-lg) {
+              flex-direction: row;
+            }
+
+            >.project-image {
+              display: flex;
+              margin-bottom: 12px;
+              border-radius: 10px;
+              max-width: $size_base_multiplier * 40;
+              width: 100%;
+
+              @include respond-to(from-lg) {
+                max-width: $size_base_multiplier * 31;
+                margin-right: 20px;
+                margin-bottom: unset;
+              }
+
+              >.project-cover {
+                width: 100%;
+                position: relative;
+                padding-top: $size_base_multiplier * 21;
+                border-radius: inherit;
+
+                >.project-cover-style {
+                  position: absolute;
+                  max-height: $size_base_multiplier * 21;
+                  inset: 0px;
+                  z-index: 0;
+                  border-radius: inherit;
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-color: $colors_card_bg;
+                  background-image: -webkit-image-set(url(https://media-cdn.tripadvisor.com/media/photo-s/12/08/65/99/winter-day-at-zoo-ljubljana.jpg) 1x, url(https://media-cdn.tripadvisor.com/media/photo-s/12/08/65/99/winter-day-at-zoo-ljubljana.jpg) 2x, url(https://media-cdn.tripadvisor.com/media/photo-s/12/08/65/99/winter-day-at-zoo-ljubljana.jpg) 3x);
+                }
+              }
+            }
+
+            >.project-content {
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              height: inherit;
+
+              >.project-title {
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+
+                font-family: $font_headline;
+                font-size: 1.4375rem;
+                font-weight: $font_semi_bold;
+                letter-spacing: -0.25px;
+                line-height: 1.4;
+
+                @include respond-to(from-lg) {
+                  font-size: 2.125rem;
+                  font-weight: $font_bold;
+                  letter-spacing: -0.5px;
+                  line-height: 40px;
+                }
+              }
+
+              >p.project-description {
+                margin-top: $size_base_multiplier * 2;
+                color: $colors_text;
+                font-family: $font_body;
+                font-weight: $font_regular;
+                font-size: 1rem;
+                line-height: 1.5;
+              }
+
+              >.project-footer {
+                display: flex;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                align-items: center;
+                margin-top: 16px;
+
+                @include respond-to(from-lg) {
+                  margin-top: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

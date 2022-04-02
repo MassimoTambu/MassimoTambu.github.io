@@ -1,0 +1,233 @@
+@import 'variables.scss';
+@import 'responsive.scss';
+
+.user-sidebar {
+  background-color: $colors_user_card_bg;
+  display: flex;
+  flex-flow: column nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: unset;
+    bottom: -2px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, var(--color-white10) 0%, var(--color-brandWhite) 50%, var(--color-white10) 100%);
+  }
+
+  @include respond-to(from-md) {
+    min-width: $size_base_multiplier * 52;
+    max-width: $size_base_multiplier * 64;
+    width: 100%;
+
+    padding: $size_base_multiplier * 7 $size_base_multiplier * 4;
+    border-bottom: none;
+    border-right: 2px solid transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      bottom: unset;
+      left: unset;
+      right: -2px;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(to bottom, var(--color-white10) 0%, var(--color-brandWhite) 50%);
+    }
+  }
+
+  @include respond-to(xlg) {
+    margin: $size_base_multiplier * 4 0px;
+    border: none;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPiA8ZGVmcz4gPG1hc2sgaWQ9Im1hc2siPiA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiByeD0iMjAiIHJ5PSIyMCIgZmlsbD0id2hpdGUiIC8+IDwvbWFzaz4gPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudEJvcmRlciIgZ3JhZGllbnRUcmFuc2Zvcm09InJvdGF0ZSg5MCkiPiA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9InJnYmEoMjU1LCAyNTUsIDI1NSwgMCkiIC8+IDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgLz4gPC9saW5lYXJHcmFkaWVudD4gPC9kZWZzPiA8cmVjdCBtYXNrPSJ1cmwoI21hc2spIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJub25lIiByeD0iMjAiIHJ5PSIyMCIgc3Ryb2tlPSJ1cmwoI2dyYWRpZW50Qm9yZGVyKSIgc3Ryb2tlLXdpZHRoPSIzIiAvPiA8L3N2Zz4=);
+    border-radius: 20px;
+  }
+
+  >.user-sidebar-sticky {
+    display: flex;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: $size_base_multiplier * 46;
+
+    @include respond-to(upto-sm) {
+      padding: $size_base_multiplier * 6 0;
+    }
+
+    @include respond-to(from-md) {
+      position: sticky;
+      top: 55px;
+    }
+
+    >.user-picture {
+      width: 100%;
+      height: 100%;
+      max-width: $size_base_multiplier * 26;
+      max-height: $size_base_multiplier * 26;
+      vertical-align: middle;
+      border-radius: 50%;
+
+      background: linear-gradient(to top, $colors_user_image_bg_bottom, $colors_user_image_bg_top);
+      padding: $size_base_multiplier;
+      margin-top: -$size_base_multiplier;
+      border: none;
+    }
+
+    >.user-fullname {
+      color: white;
+      text-align: center;
+      padding: $size_base_multiplier 0px;
+      background: radial-gradient(189.37% 1750.88% at 1.77% 108.13%, rgb(97, 166, 242) 1.56%, rgb(143, 111, 219) 23.44%, rgb(255, 90, 94) 33.12%, rgb(242, 201, 76) 52%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      font-family: $font_headline;
+      font-size: 2.125rem;
+      font-weight: $font_bold;
+      letter-spacing: -0.5px;
+      line-height: 40px;
+    }
+
+    >.user-tags {
+      padding-top: $size_base_multiplier;
+      margin-bottom: $size_base_multiplier;
+      width: 100%;
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      -webkit-box-pack: center;
+
+      >.tag {
+        margin-top: inherit;
+        margin-bottom: inherit;
+        margin-right: $size_base_multiplier;
+
+        display: inline-flex;
+        -webkit-box-align: center;
+        align-items: center;
+        height: $size_base_multiplier * 4;
+        border-radius: $size_base_multiplier * 2;
+        width: auto;
+        white-space: nowrap;
+        padding: 10px 12px;
+        overflow: hidden;
+        background-color: $colors_white;
+        border: 1px solid transparent;
+        box-shadow: rgb(228 232 247 / 80%) 0px 0px 24px;
+
+
+        @include respond-to(from-md) {
+          height: $size_base_multiplier * 5;
+          border-radius: 20px;
+        }
+
+        >span {
+          display: flex;
+          -webkit-box-flex: 1;
+          flex-grow: 1;
+          font-family: $font_body;
+          font-size: 0.75rem;
+          letter-spacing: 0.15px;
+          line-height: 1.333;
+          font-weight: $font_regular;
+
+          @include respond-to(from-md) {
+            font-size: 0.875rem;
+            line-height: 1.42;
+          }
+        }
+      }
+    }
+
+    >.user-info {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 100%;
+      -webkit-box-align: center;
+      align-items: center;
+      text-align: center;
+
+      >.user-description {
+        overflow-wrap: anywhere;
+        min-height: $size_base_multiplier * 2;
+        padding: $size_base_multiplier 0px;
+
+        font-family: $font_body;
+        font-weight: $font_regular;
+        font-size: 0.875rem;
+        letter-spacing: 0.15px;
+
+        @include respond-to(from-md) {
+          font-size: 1rem;
+          line-height: 1.5;
+        }
+      }
+
+      >.user-state {
+        display: inline-flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        padding: $size_base_multiplier 0px;
+
+        @include respond-to(from-md) {
+          display: flex;
+
+        }
+
+        >*+* {
+          margin-left: $size_base_multiplier;
+        }
+
+        >p {
+          max-width: 250px;
+          overflow: hidden;
+
+          font-family: $font_body;
+          font-weight: $font_regular;
+          font-size: 1rem;
+          line-height: 1.5;
+
+          @include respond-to(from-sm) {
+            max-width: 350px;
+          }
+        }
+
+
+      }
+
+      >.user-contacts {
+        display: flex;
+        flex-flow: row wrap;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        padding: $size_base_multiplier 0px;
+        width: 100%;
+
+        > :not(:last-child) {
+          margin-right: $size_base_multiplier * 2;
+        }
+
+        >.contact {
+          display: inline-block;
+
+          >a {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            color: $colors_text;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+// #region colors
+$colors_text: #141414;
+
+$colors_bg: #F5F5F5;
+$colors_card_bg: #F6F6F6;
+$colors_project_card_bg:#FCFCFC;
+$colors_user_card_bg: #FAFAFA;
+$colors_user_image_bg_top: #FFFFFF;
+$colors_user_image_bg_bottom: #EEEEEE;
+$colors_tag_bg: #FAFAFA;
+
+$colors_white: #ffff;
+// #endregion
+
+
+$size_base_multiplier: 8px;
+
+// #region font family
+$main_font: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif";
+$second_font: "Helvetica Neue, Helvetica, Arial, sans-serif";
+$font_headline: Inter,
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Helvetica,
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji";
+$font_body: $font_headline;
+// #endregion
+
+// #region font sizes
+$font_size_h1: 26px;
+$font_size_h2: 24px;
+$font_size_h3: 22px;
+$font_size_h4: 20px;
+$font_size_h5: 18px;
+$font_size_text: 16px;
+$font_size: 14px;
+
+$font_size_main_title: $size_base_multiplier * 8;
+$font_size_secondary_title: $size_base_multiplier * 4;
+$font_size_text: $size_base_multiplier * 2;
+// #endregion
+
+// #region line heights
+$line_height: 20px;
+$line_height_h5: $font_size_h5+6;
+$line_height_h6: $font_size_text+6;
+// #endregion
+
+// #region font weights
+$font_light: 300;
+$font_regular: 400;
+$font_medium: 500;
+$font_semi_bold: 600;
+$font_bold: 700;
+// #endregion

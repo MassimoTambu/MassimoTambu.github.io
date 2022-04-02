@@ -1,0 +1,204 @@
+.user-sidebar {
+  background-color: #FAFAFA;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  position: relative;
+}
+.user-sidebar::before {
+  content: "";
+  position: absolute;
+  top: unset;
+  bottom: -2px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, var(--color-white10) 0%, var(--color-brandWhite) 50%, var(--color-white10) 100%);
+}
+@media screen and (min-width: 992px) {
+  .user-sidebar {
+    min-width: 416px;
+    max-width: 512px;
+    width: 100%;
+    padding: 56px 32px;
+    border-bottom: none;
+    border-right: 2px solid transparent;
+  }
+  .user-sidebar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: unset;
+    left: unset;
+    right: -2px;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--color-white10) 0%, var(--color-brandWhite) 50%);
+  }
+}
+@media screen and (min-width: 1441px) {
+  .user-sidebar {
+    margin: 32px 0px;
+    border: none;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPiA8ZGVmcz4gPG1hc2sgaWQ9Im1hc2siPiA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiByeD0iMjAiIHJ5PSIyMCIgZmlsbD0id2hpdGUiIC8+IDwvbWFzaz4gPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudEJvcmRlciIgZ3JhZGllbnRUcmFuc2Zvcm09InJvdGF0ZSg5MCkiPiA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9InJnYmEoMjU1LCAyNTUsIDI1NSwgMCkiIC8+IDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgLz4gPC9saW5lYXJHcmFkaWVudD4gPC9kZWZzPiA8cmVjdCBtYXNrPSJ1cmwoI21hc2spIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJub25lIiByeD0iMjAiIHJ5PSIyMCIgc3Ryb2tlPSJ1cmwoI2dyYWRpZW50Qm9yZGVyKSIgc3Ryb2tlLXdpZHRoPSIzIiAvPiA8L3N2Zz4=);
+    border-radius: 20px;
+  }
+}
+.user-sidebar > .user-sidebar-sticky {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  max-width: 368px;
+}
+@media screen and (max-width: 991px) {
+  .user-sidebar > .user-sidebar-sticky {
+    padding: 48px 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .user-sidebar > .user-sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 55px;
+  }
+}
+.user-sidebar > .user-sidebar-sticky > .user-picture {
+  width: 100%;
+  height: 100%;
+  max-width: 208px;
+  max-height: 208px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: linear-gradient(to top, #EEEEEE, #FFFFFF);
+  padding: 8px;
+  margin-top: -8px;
+  border: none;
+}
+.user-sidebar > .user-sidebar-sticky > .user-fullname {
+  color: white;
+  text-align: center;
+  padding: 8px 0px;
+  background: radial-gradient(189.37% 1750.88% at 1.77% 108.13%, rgb(97, 166, 242) 1.56%, rgb(143, 111, 219) 23.44%, rgb(255, 90, 94) 33.12%, rgb(242, 201, 76) 52%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 2.125rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 40px;
+}
+.user-sidebar > .user-sidebar-sticky > .user-tags {
+  padding-top: 8px;
+  margin-bottom: 8px;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -webkit-box-pack: center;
+}
+.user-sidebar > .user-sidebar-sticky > .user-tags > .tag {
+  margin-top: inherit;
+  margin-bottom: inherit;
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  border-radius: 16px;
+  width: auto;
+  white-space: nowrap;
+  padding: 10px 12px;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid transparent;
+  box-shadow: rgba(228, 232, 247, 0.8) 0px 0px 24px;
+}
+@media screen and (min-width: 992px) {
+  .user-sidebar > .user-sidebar-sticky > .user-tags > .tag {
+    height: 40px;
+    border-radius: 20px;
+  }
+}
+.user-sidebar > .user-sidebar-sticky > .user-tags > .tag > span {
+  display: flex;
+  flex-grow: 1;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 0.75rem;
+  letter-spacing: 0.15px;
+  line-height: 1.333;
+  font-weight: 400;
+}
+@media screen and (min-width: 992px) {
+  .user-sidebar > .user-sidebar-sticky > .user-tags > .tag > span {
+    font-size: 0.875rem;
+    line-height: 1.42;
+  }
+}
+.user-sidebar > .user-sidebar-sticky > .user-info {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+.user-sidebar > .user-sidebar-sticky > .user-info > .user-description {
+  overflow-wrap: anywhere;
+  min-height: 16px;
+  padding: 8px 0px;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-weight: 400;
+  font-size: 0.875rem;
+  letter-spacing: 0.15px;
+}
+@media screen and (min-width: 992px) {
+  .user-sidebar > .user-sidebar-sticky > .user-info > .user-description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+.user-sidebar > .user-sidebar-sticky > .user-info > .user-state {
+  display: inline-flex;
+  justify-content: center;
+  padding: 8px 0px;
+}
+@media screen and (min-width: 992px) {
+  .user-sidebar > .user-sidebar-sticky > .user-info > .user-state {
+    display: flex;
+  }
+}
+.user-sidebar > .user-sidebar-sticky > .user-info > .user-state > * + * {
+  margin-left: 8px;
+}
+.user-sidebar > .user-sidebar-sticky > .user-info > .user-state > p {
+  max-width: 250px;
+  overflow: hidden;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+@media screen and (min-width: 768px) {
+  .user-sidebar > .user-sidebar-sticky > .user-info > .user-state > p {
+    max-width: 350px;
+  }
+}
+.user-sidebar > .user-sidebar-sticky > .user-info > .user-contacts {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0px;
+  width: 100%;
+}
+.user-sidebar > .user-sidebar-sticky > .user-info > .user-contacts > :not(:last-child) {
+  margin-right: 16px;
+}
+.user-sidebar > .user-sidebar-sticky > .user-info > .user-contacts > .contact {
+  display: inline-block;
+}
+.user-sidebar > .user-sidebar-sticky > .user-info > .user-contacts > .contact > a {
+  display: flex;
+  align-items: center;
+  color: #141414;
+}/*# sourceMappingURL=user-sidebar.css.map */
