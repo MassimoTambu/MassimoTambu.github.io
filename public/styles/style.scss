@@ -101,4 +101,8 @@ body {
       flex-flow: row nowrap;
     }
   }
+
+  .bold {
+    font-weight: $font_bold;
+  }
 }

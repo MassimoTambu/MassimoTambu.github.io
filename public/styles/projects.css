@@ -172,7 +172,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #F6F6F6;
-  background-image: -webkit-image-set(url(https://media-cdn.tripadvisor.com/media/photo-s/12/08/65/99/winter-day-at-zoo-ljubljana.jpg) 1x, url(https://media-cdn.tripadvisor.com/media/photo-s/12/08/65/99/winter-day-at-zoo-ljubljana.jpg) 2x, url(https://media-cdn.tripadvisor.com/media/photo-s/12/08/65/99/winter-day-at-zoo-ljubljana.jpg) 3x);
+  background-image: -webkit-image-set(url(../assets/website-under-construction.webp) 1x, url(../assets/website-under-construction.webp) 2x, url(../assets/website-under-construction.webp) 3x);
 }
 .projects-container > div > .projects > div > .project > .project-body > .project-content {
   display: flex;

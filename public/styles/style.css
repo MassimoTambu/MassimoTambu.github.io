@@ -88,4 +88,7 @@ body > section.container {
     display: flex;
     flex-flow: row nowrap;
   }
+}
+body .bold {
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
