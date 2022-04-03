@@ -74,23 +74,24 @@
 
     const newTheme = toggleTheme(theme);
 
+    btn.dataset.theme = newTheme;
     setThemeToStyle(newTheme);
     setThemeIcon(newTheme);
-    btn.dataset.theme = newTheme;
     setThemeToLS(newTheme);
   }
 
   function loadTheme() {
+    const btn = document.getElementById(btnId);
     let theme = localStorage.getItem(lsThemeKey);
 
     if (theme == null) {
-      theme = document.querySelector('#' + btnId).dataset.theme;
+      theme = btn.dataset.theme;
 
       setThemeToLS(theme);
       return;
     }
 
-    document.querySelector('#' + btnId).dataset.theme = theme;
+    btn.dataset.theme = theme;
     setThemeToStyle(theme);
     setThemeIcon(theme);
   }
