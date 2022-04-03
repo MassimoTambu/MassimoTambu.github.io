@@ -112,7 +112,7 @@
   border: none;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPiA8ZGVmcz4gPG1hc2sgaWQ9Im1hc2siPiA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiByeD0iMjAiIHJ5PSIyMCIgZmlsbD0id2hpdGUiIC8+IDwvbWFzaz4gPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudEJvcmRlciIgZ3JhZGllbnRUcmFuc2Zvcm09InJvdGF0ZSg5MCkiPiA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmZmZmYiIC8+IDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0icmdiYSgyNTUsIDI1NSwgMjU1LCAwKSIgLz4gPC9saW5lYXJHcmFkaWVudD4gPC9kZWZzPiA8cmVjdCBtYXNrPSJ1cmwoI21hc2spIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJub25lIiByeD0iMjAiIHJ5PSIyMCIgc3Ryb2tlPSJ1cmwoI2dyYWRpZW50Qm9yZGVyKSIgc3Ryb2tlLXdpZHRoPSIzIiAvPiA8L3N2Zz4=);
   border-radius: 20px;
-  background: #FCFCFC;
+  background: var(--colors-project-card-bg);
   box-shadow: none;
 }
 @media screen and (min-width: 768px) {
@@ -171,7 +171,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #F6F6F6;
+  background-color: var(--colors-project-card-bg);
   background-image: -webkit-image-set(url(../assets/website-under-construction.webp) 1x, url(../assets/website-under-construction.webp) 2x, url(../assets/website-under-construction.webp) 3x);
 }
 .projects-container > div > .projects > div > .project > .project-body > .project-content {
@@ -201,7 +201,7 @@
 }
 .projects-container > div > .projects > div > .project > .project-body > .project-content > p.project-description {
   margin-top: 16px;
-  color: #141414;
+  color: var(--colors-text);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 400;
   font-size: 1rem;

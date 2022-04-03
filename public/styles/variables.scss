@@ -1,18 +1,3 @@
-// #region colors
-$colors_text: #141414;
-
-$colors_bg: #F5F5F5;
-$colors_card_bg: #F6F6F6;
-$colors_project_card_bg:#FCFCFC;
-$colors_user_card_bg: #FAFAFA;
-$colors_user_image_bg_top: #FFFFFF;
-$colors_user_image_bg_bottom: #EEEEEE;
-$colors_tag_bg: #FAFAFA;
-
-$colors_white: #ffff;
-// #endregion
-
-
 $size_base_multiplier: 8px;
 
 // #region font family
@@ -44,11 +29,9 @@ $font_size_secondary_title: $size_base_multiplier * 4;
 $font_size_text: $size_base_multiplier * 2;
 // #endregion
 
-// #region line heights
 $line_height: 20px;
 $line_height_h5: $font_size_h5+6;
 $line_height_h6: $font_size_text+6;
-// #endregion
 
 // #region font weights
 $font_light: 300;

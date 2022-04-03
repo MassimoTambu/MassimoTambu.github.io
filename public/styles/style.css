@@ -16,8 +16,8 @@ body {
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 14px;
   font-weight: 300;
-  color: #141414;
-  background-color: #F6F6F6;
+  color: var(--colors-text);
+  background-color: var(--colors-page-bg);
   overflow-y: scroll;
 }
 body * {
@@ -91,4 +91,34 @@ body > section.container {
 }
 body .bold {
   font-weight: 700;
+}
+
+:root {
+  --light-colors-text: #141414;
+  --light-colors-page-bg: #F6F6F6;
+  --light-colors-user-card-bg: #FAFAFA;
+  --light-colors-user-image-bg-top: #FFFFFF;
+  --light-colors-user-image-bg-bottom: #EEEEEE;
+  --light-colors-user-tag: #FFFFFF;
+  --light-colors-user-tag-shadow: #E4E8F7CC;
+  --light-colors-project-card-bg: #FCFCFC;
+  --light-svg-user-card-border: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPiA8ZGVmcz4gPG1hc2sgaWQ9Im1hc2siPiA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiByeD0iMjAiIHJ5PSIyMCIgZmlsbD0id2hpdGUiIC8+IDwvbWFzaz4gPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudEJvcmRlciIgZ3JhZGllbnRUcmFuc2Zvcm09InJvdGF0ZSg5MCkiPiA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9InJnYmEoMjU1LCAyNTUsIDI1NSwgMCkiIC8+IDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgLz4gPC9saW5lYXJHcmFkaWVudD4gPC9kZWZzPiA8cmVjdCBtYXNrPSJ1cmwoI21hc2spIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJub25lIiByeD0iMjAiIHJ5PSIyMCIgc3Ryb2tlPSJ1cmwoI2dyYWRpZW50Qm9yZGVyKSIgc3Ryb2tlLXdpZHRoPSIzIiAvPiA8L3N2Zz4=);
+  --dark-colors-text: #C9D1D9;
+  --dark-colors-page-bg: #0D1117;
+  --dark-colors-user-card-bg: #161B22;
+  --dark-colors-user-image-bg-top: #000000;
+  --dark-colors-user-image-bg-bottom: #252525;
+  --dark-colors-user-tag: #1c222b;
+  --dark-colors-user-tag-shadow: #0a0c0ccc;
+  --dark-colors-project-card-bg: #161B22;
+  --dark-svg-user-card-border: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPiA8ZGVmcz4gPG1hc2sgaWQ9Im1hc2siPiA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiByeD0iMjAiIHJ5PSIyMCIgZmlsbD0id2hpdGUiIC8+IDwvbWFzaz4gPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudEJvcmRlciIgZ3JhZGllbnRUcmFuc2Zvcm09InJvdGF0ZSg5MCkiPiA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9InJnYmEoMCwgMCwgMCwgMCkiIC8+IDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgLz4gPC9saW5lYXJHcmFkaWVudD4gPC9kZWZzPiA8cmVjdCBtYXNrPSJ1cmwoI21hc2spIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJub25lIiByeD0iMjAiIHJ5PSIyMCIgc3Ryb2tlPSJ1cmwoI2dyYWRpZW50Qm9yZGVyKSIgc3Ryb2tlLXdpZHRoPSIzIiAvPiA8L3N2Zz4=);
+  --colors-text: var(--light-colors-text);
+  --colors-page-bg: var(--light-colors-page-bg);
+  --colors-user-card-bg: var(--light-colors-user-card-bg);
+  --colors-user-image-bg-top: var(--light-colors-user-image-bg-top);
+  --colors-user-image-bg-bottom: var(--light-colors-user-image-bg-bottom);
+  --colors-user-tag: var(--light-colors-user-tag);
+  --colors-user-tag-shadow: var(--light-colors-user-tag-shadow);
+  --colors-project-card-bg: var(--light-colors-project-card-bg);
+  --svg-user-card-border: var(--light-svg-user-card-border);
 }/*# sourceMappingURL=style.css.map */

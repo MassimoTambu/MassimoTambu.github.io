@@ -31,6 +31,8 @@
   <link rel="stylesheet" href="public/styles/fonts.css">
   <link rel="stylesheet" href="public/styles/user-sidebar.css">
   <link rel="stylesheet" href="public/styles/projects.css">
+
+  <script src="https://kit.fontawesome.com/0f9f02febd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -38,7 +40,12 @@
 
     <div class="user-sidebar">
       <div class="user-sidebar-sticky">
-        <img class="user-picture" src="public/assets/user_picture.webp" />
+        <div>
+          <button id="btn-theme" class="btn-theme" title="Change theme" data-theme="light">
+            <i id="icon-theme" class="fa-solid fa-moon"></i>
+          </button>
+          <img class="user-picture" src="public/assets/user_picture.webp" />
+        </div>
         <h1 class="user-fullname">
           Massimo Tamburini
         </h1>
@@ -78,7 +85,8 @@
 		c1.172,0,2.121,0.949,2.121,2.121v3.578c0,1.122-0.875,2.03-1.975,2.106h-9.051c-1.1-0.076-1.975-0.984-1.975-2.106V16.855
 		L9.208,16.855z M32.708,37.416h-21.5c-1.104,0-2-0.896-2-2s0.896-2,2-2h21.5c1.104,0,2,0.896,2,2S33.812,37.416,32.708,37.416z
 		 M32.708,29.916h-21.5c-1.104,0-2-0.896-2-2s0.896-2,2-2h21.5c1.104,0,2,0.896,2,2S33.812,29.916,32.708,29.916z M32.708,22.416
-		h-6.5c-1.104,0-2-0.896-2-2c0-1.104,0.896-2,2-2h6.5c1.104,0,2,0.896,2,2C34.708,21.52,33.812,22.416,32.708,22.416z" />
+		h-6.5c-1.104,0-2-0.896-2-2c0-1.104,0.896-2,2-2h6.5c1.104,0,2,0.896,2,2C34.708,21.52,33.812,22.416,32.708,22.416z"
+                    fill="currentColor" />
                 </svg>
               </a>
             </div>
@@ -153,6 +161,7 @@
     </div>
   </section>
 
+  <script src="public/js/index.js"></script>
 </body>
 
 </html>
