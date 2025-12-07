@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "com.h2bit.bevibes",
+    "package_name": "com.h2bit.bevibes",
+    "sha256_cert_fingerprints":
+    ["FB:16:0B:DC:73:24:D8:98:A8:C4:C2:93:60:43:ED:DB:32:A6:82:9F:65:C5:B3:1D:1B:A4:0C:8C:1F:B4:5F:1D"]
+  }
+}]
