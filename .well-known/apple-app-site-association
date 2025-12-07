@@ -1,0 +1,25 @@
+{
+   "applinks": {
+      "apps": [],
+      "details": [
+         {
+            "appIDs": [
+               "D2BPHFP93Q.com.h2bit.bevibes"
+            ],
+            "paths": [
+               "*"
+            ],
+            "components": [
+               {
+                  "/": "/*"
+               }
+            ]
+         }
+      ]
+   },
+   "webcredentials": {
+      "apps": [
+         "D2BPHFP93Q.com.h2bit.bevibes"
+      ]
+   }
+}
